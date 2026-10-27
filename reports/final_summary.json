@@ -1,0 +1,36 @@
+{
+  "project": "PPE Guard",
+  "data_input": "/kaggle/input/datasets/loliwibu/ppe-guard-datset",
+  "classes": [
+    "helmet",
+    "no_helmet",
+    "vest",
+    "boots",
+    "gloves",
+    "goggles",
+    "head",
+    "no_boots",
+    "no_gloves",
+    "no_goggle",
+    "none",
+    "person"
+  ],
+  "source_count": 2,
+  "source_images": 8451,
+  "selected_images": 8451,
+  "staged_split_counts": {
+    "test": 847,
+    "val": 1556,
+    "train": 6048
+  },
+  "model": "yolov8s.pt",
+  "best_model": "/kaggle/working/ppe_guard_day21/export/ppe_guard_best.pt",
+  "test_report": "/kaggle/working/ppe_guard_day21/reports/heldout_metrics.json",
+  "limitations": [
+    "Source schemas only mapped by exact label synonyms; no inferred compliance for persons",
+    "Unmapped/invalid images excluded; see audit",
+    "Mixed sources are partially labeled with different ontologies; union-model evaluation is exploratory",
+    "Cross-domain generalization not assessed",
+    "Nearby visual duplicates may survive without perceptual hashing"
+  ]
+}

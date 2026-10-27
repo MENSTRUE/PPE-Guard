@@ -1,0 +1,25 @@
+{
+  "all_images": 8451,
+  "eligible": 8451,
+  "selected": 8451,
+  "excluded": {},
+  "split_counts": {
+    "test": 847,
+    "val": 1556,
+    "train": 6048
+  },
+  "box_counts": {
+    "head": 26424,
+    "helmet": 1734,
+    "person": 2245,
+    "vest": 1618,
+    "gloves": 1445,
+    "boots": 1597,
+    "goggles": 518,
+    "no_helmet": 485,
+    "no_goggle": 411,
+    "none": 797,
+    "no_gloves": 556,
+    "no_boots": 115
+  }
+}

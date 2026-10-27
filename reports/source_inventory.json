@@ -1,0 +1,14 @@
+{
+  "total_files": 16917,
+  "extensions": {
+    ".txt": 8463,
+    ".yaml": 2,
+    "": 1,
+    ".jpeg": 153,
+    ".jpg": 8298
+  },
+  "yaml_paths": [
+    "Hard Hat Workers.v14-raw_headclassonly.yolov8/data.yaml",
+    "construction-ppe/data.yaml"
+  ]
+}

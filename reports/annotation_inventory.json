@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "manifest": "/kaggle/input/datasets/loliwibu/ppe-guard-datset/Hard Hat Workers.v14-raw_headclassonly.yolov8/data.yaml",
+      "names": {
+        "0": "head"
+      }
+    },
+    {
+      "manifest": "/kaggle/input/datasets/loliwibu/ppe-guard-datset/construction-ppe/data.yaml",
+      "names": {
+        "0": "helmet",
+        "1": "gloves",
+        "2": "vest",
+        "3": "boots",
+        "4": "goggles",
+        "5": "none",
+        "6": "Person",
+        "7": "no_helmet",
+        "8": "no_goggle",
+        "9": "no_gloves",
+        "10": "no_boots"
+      }
+    }
+  ],
+  "image_count": 8451,
+  "issues": {
+    "orphan_labels": 10
+  },
+  "split_image_counts": {
+    "train": 6048,
+    "val": 1556,
+    "test": 847
+  },
+  "target_box_counts": {
+    "head": 26424,
+    "helmet": 1734,
+    "person": 2245,
+    "none": 797,
+    "goggles": 518,
+    "vest": 1618,
+    "gloves": 1445,
+    "boots": 1597,
+    "no_helmet": 485,
+    "no_goggle": 411,
+    "no_gloves": 556,
+    "no_boots": 115
+  }
+}
