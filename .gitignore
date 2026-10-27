@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+backend/.env
+# Node
+node_modules/
+dist/
+# Temporary inference and build files
+uploads/
+outputs/
+*.log
+.DS_Store
+Thumbs.db

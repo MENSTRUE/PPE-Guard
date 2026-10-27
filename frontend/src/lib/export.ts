@@ -1,0 +1,4 @@
+import type {PredictionResponse} from './types';
+export function saveBlob(blob:Blob,filename:string){const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+export function downloadReport(result:PredictionResponse){const copy={...result,annotated_image_base64:undefined};saveBlob(new Blob([JSON.stringify({...copy,exported_at:new Date().toISOString()},null,2)],{type:'application/json'}),'ppe-guard-inspection.json');}
+export function downloadAnnotation(result:PredictionResponse){if(!result.annotated_image_base64)return;const str=atob(result.annotated_image_base64);const bytes=new Uint8Array(str.length);for(let i=0;i<str.length;i++)bytes[i]=str.charCodeAt(i);saveBlob(new Blob([bytes],{type:'image/jpeg'}),'ppe-guard-annotated.jpg');}
